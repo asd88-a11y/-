@@ -1,0 +1,27 @@
+.span_head{
+    font-weight: bold;
+}
+
+.span_body{
+    margin:10px 50px 15px 20px;
+}
+
+.span_bod{
+    display:block;
+}
+
+body{
+    width:900px;
+}
+
+h1{
+    float:left;
+    height:752px;
+    width: 120px;
+    background-color:rgb(132, 190, 245);
+    margin-top: 0px;
+    margin-right:20px;
+    color:white;
+    text-align:center;
+
+}
