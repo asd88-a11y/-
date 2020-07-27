@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title id="title">
+        简历
+	</title>
+    <link rel="stylesheet" href="style_1.css">
+    <script>
+        var now = new Date()
+        nh = now.getHours()
+        if(nh<6){
+            document.getElementById("title").innerHTML = "凌晨好，面试官"
+        }
+        else if(nh<11){
+            document.getElementById("title").innerHTML = "早上好，面试官"
+        }
+        else if(nh<13){
+            document.getElementById("title").innerHTML = "中午好，面试官"
+        }
+        else if(nh<18){
+            document.getElementById("title").innerHTML = "下午好，面试官"
+        }
+        else if(nh<20){
+            document.getElementById("title").innerHTML = "傍晚好，面试官"
+        }
+        else if(nh<22){
+            document.getElementById("title").innerHTML = "晚上好，面试官"
+        }
+        else{
+            document.getElementById("title").innerHTML = "深夜了，早点休息，面试官"
+        }
+    </script>
+</head>
+
+
+<body>
+	<h1>简历</h1>
+<div>
+	<h2>基本信息</h2>
+
+	<span class="span_head">姓名</span><span class="span_body">张三</span>
+	<span class="span_head">性别</span><span class="span_body">男</span>
+	<span class="span_head">应聘职位</span><span class="span_body">web前端工程师</span>
+</div>
+<div>
+	<h2>联系方式</h2>
+
+	<span class="span_head">手机</span><span class="span_body">12312341234</span>
+	<span class="span_head">Email</span><span class="span_body"><a href="baidu.com">jioin@qq.com</a></span>
+	<span class="span_head">个人主页</span><span class="span_body"><a href="baidu.com">kobe bryant</a></span>
+</div>
+<div>
+	<h2>能力描述</h2>
+	<span class="span_head">技术能力</span>
+	<span class="span_bod">熟练掌握HTML\CSS，javascript</span><br>
+	<span class="span_head">综合能力</span>
+	<span class="span_bod">良好的沟通，主动积极，努力勤奋</span>
+</div>
+<div>
+	<h2>教育经历</h2>
+	<span class="span_head">本科</span>
+	<span class="span_bod">百度前端技术学院小薇学院</span><br>
+	<span class="span_head">研究生</span>
+	<span class="span_bod">百度前端技术学院大斌学院</span>
+</div>
+<div>
+	<h2>项目经历</h2>
+	<span class="span_head">小度小度</span>
+	<span class="span_bod">作为前端工程师角色参与了ABC组件的开发</span><br>
+	<span class="span_head">SAN Doc</span>
+	<span class="span_bod">作为文档工程师参与了SAN Doc编写</span>
+</div>
+
+
+
+</body>
+</html>
