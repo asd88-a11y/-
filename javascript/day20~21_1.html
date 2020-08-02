@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>
+        <input id="name" type="text" onkeyup="enter_esc(event)">    
+        <button id="submit-btn" onclick="input_console()">Submit</button>        
+
+    <script>
+
+        var a = document.querySelector("#name");
+        var b = document.querySelector("#submit-btn");
+        console.log(a,b)
+        //当点击按钮 submit-btn 时，在console中输出 name 中的内容
+       function input_console(){
+            console.log(a.value)
+        };
+        
+        //在输入过程中，如果按回车键，则同样执行上一条的需求
+        //在输入过程中，如果按 ESC 键，则把输入框中的内容清空
+
+        function enter_esc(){
+            switch(event.keyCode){
+                case 13:
+                    console.log(a.value)
+                    break;
+                case 27:
+                    a.value = ""
+                    break;
+            }
+
+        }
+
+
+
+
+
+
+
+        
+
+    </script>
+</body>
+</html>
